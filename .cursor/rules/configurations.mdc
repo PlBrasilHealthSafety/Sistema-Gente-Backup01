@@ -1,0 +1,71 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Business Management Sistema GENTE
+
+## Important Information
+
+- **Environment: Windows PowerShell - ALWAYS USE COMMANDS AIMED AT POWERSHELL**
+
+- **Shadcn Command**: `npx shadcn@latest add`
+
+- **The configuration of the business management system that we will develop will be in**:
+
+- **Frontend**
+
+- **Next.js**
+- **TypeScript**
+- **Tailwind with ShadcnUI**
+
+- **Backend**
+
+- **Node.js with Express using Rest API to integrate with a PostgreSQL database**
+
+- **Always analyze the Pull Request and see if it has the potential to break the code, always adjust the code to receive the pull request and integrate in the best way to merge into main**
+
+- **Always use local.env as the main .env file for configuration in development**
+
+- **Always use npm run dev in the correct directory**
+
+## Color Palette
+
+### Light Mode
+```css
+:root.light {
+--primary: #00A298; /* Verde PLBrasil Health&Safety - cor vibrante para elementos principais */
+--secondary: #1D3C44; /* Verde Escuro PLBrasil - para contraste e hierarquia */
+--accent: #AECECB; /* Verde Água PLBrasil - para destaques suaves */
+--text: #1D3C44; /* Verde Escuro PLBrasil - melhor legibilidade que #333333 */
+--background: #FFFFFF; /* Mantém o branco para máximo contraste */
+}
+```
+
+## Frontend (Next.js) - `frontend` folder
+
+### Installed Packages
+- `tailwindcss@3.4.17`, `postcss`, `autoprefixer`: Utility styling. Initialize with:
+```bash
+npx tailwindcss init -p
+```
+- `shadcn/ui`: Components styled with Tailwind. Initialize with:
+```bash
+npx shadcn@latest init
+```
+Add components:
+```bash
+npx shadcn@latest add <component>
+```
+Example: `npx shadcn@latest add toast`
+
+### Creation
+```bash
+npx create-next-app@latest sistema_gente
+```
+
+## Backend (Node.js with Express) - `backend` folder
+
+### Creation
+
+Integrate the backend with a PostgreSQL database using the Rest API.
